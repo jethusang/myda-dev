@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Motlalerain Youth Development Academy</title>
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/css/uikit.min.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 991px) {
+            .uk-navbar-center {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+            }
+
+            .uk-navbar-right {
+                display: none;
+                /* Hide default right side items on small screens */
+            }
+
+            .logo {
+                width: 150px;
+                /* Adjust logo width for smaller screens */
+            }
+
+
+            /* Remove top margin from navigation links on small screens */
+            nav uk-dropnav ul li {
+                margin-top: 0;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .uk-navbar-toggle {
+                display: none;
+                margin-left: 50px;
+            }
+
+            .uk-slideshow-items {
+                height: 100px;
+            }
+        }
+
+
+        /* Reset styles for active class (optional) */
+        .uk-active {
+            background-color: transparent !important;
+            /* remove default background color */
+            color: inherit !important;
+            /* inherit text color */
+        }
+
+        .logo {
+            width: 200px;
+        }
+
+        .uk-slideshow-items {
+            height: 550px;
+        }
+
+        .main-color {
+            color: rgb(0, 195, 255);
+        }
+
+        .sec-main {
+            color: rgb(0, 195, 255);
+        }
+
+        .secondary-color {
+            color: #f7f7f7;
+        }
+
+        .main-bak-color {
+            background-color: rgb(0, 195, 255);
+        }
+
+
+        .glass-background {
+            background: rgba(239, 239, 62, 0.216);
+            border-radius: 16px;
+            /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+            backdrop-filter: blur(2px);
+            padding: 20px;
+        }
+        .main-backg-color{
+            background-color: rgb(0, 195, 255);
+        }
+    </style>
+
+</head>
+<header>
+    <nav class="uk-navbar-container uk-text-large uk-text-bold">
+        <div class="uk-container">
+            <div uk-navbar>
+
+                <div class="uk-navbar-center">
+                    <a class="uk-navbar-item uk-logo" href="#"><img class="logo" src="/assets/MotlaleRain_logo.jpg"
+                            alt="Potters'house logo"></a>
+
+                    <!-- humberger to only appear in the phones  -->
+
+                    <a class="uk-navbar-toggle uk-navbar-toggle-animate" uk-navbar-toggle-icon href="#"></a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active"><a href="/index.html">Home</a></li>
+                            <li><a href="/index.html#about">About</a></li>
+                            <li><a href="/html/programs.html">Programs</a></li>
+                            <li><a href="/html/events.html">Events</a></li>
+                            <li><a href="/index.html#contact-us">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <nav uk-dropnav="mode: click">
+                        <ul class="uk-subnav uk-navbar-right">
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/index.html#about">About</a></li>
+                            <li>
+                                <a href="#">Programs<span uk-drop-parent-icon></span></a>
+                                <div class="uk-dropdown">
+                                    <ul class="uk-nav uk-dropdown-nav">
+                                        <li><a href="/html/programs.html#program1">Personalized tutoring</a></li>
+                                        <li><a href="/html/programs.html#program2">Homework & Assignment Assistance</a></li>
+                                        <li><a href="/html/programs.html#program3">Exam Preparation</a></li>
+                                        <li><a href="/html/programs.html#program4">Learning Strategies & Study Skills</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="/html/events.html">Events</a></li>
+
+                            <li><a href="/index.html#contact-us">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body>
+
+
+
+    <div class="uk-container uk-container-large uk-margin-medium-top " >
+
+
+        <div class="uk-flex uk-flex-center@m">
+            <ul class="uk-breadcrumb">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/html/programs.html">Programs</a></li>
+                <li><span>Registration</span></li>
+            </ul>
+        </div>
+
+        <div class="uk-flex uk-flex-center@m">
+            <div>
+                <div class="uk-width-2xlarge uk-margin">
+                    <div class="uk-card center-div uk-card-default uk-card-body">
+                        <h2 class="uk-heading-bullet">Student Information</h2>
+                        <form class="uk-grid-small" uk-grid>
+                            <div class="uk-width-1-2@s">
+                                <label class="uk-form-label" for="form-stacked-text">First Name</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input" id="form-stacked-text" type="text"
+                                        placeholder="student first name...">
+                                </div>
+                            </div>
+
+                            <div class="uk-width-1-2@s">
+                                <label class="uk-form-label" for="form-stacked-text">Last Name</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input" id="form-stacked-text" type="text"
+                                        placeholder="student last name...">
+                                </div>
+                            </div>
+
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="form-stacked-text">Email</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input" id="form-stacked-text" type="text"
+                                        placeholder="student email...">
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="form-stacked-text">Phone Number</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input" id="form-stacked-text" type="text"
+                                        placeholder="student phone No...">
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="form-stacked-text">ID Number</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input" id="form-stacked-text" type="text"
+                                        placeholder="student ID No...">
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="form-stacked-text">Yard Number</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input" id="form-stacked-text" type="text"
+                                        placeholder="yard number...">
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="form-stacked-text">Section</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input" id="form-stacked-text" type="text"
+                                        placeholder="section name ...">
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="form-stacked-text">Zip-Code</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input" id="form-stacked-text" type="text"
+                                        placeholder="zip-code...">
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="form-stacked-text">City/Town</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input" id="form-stacked-text" type="text"
+                                        placeholder="city/town...">
+                                </div>
+                            </div>
+
+
+                            <div class="uk-margin">
+                                <div class="uk-form-label">Gender</div>
+                                <div class="uk-form-controls uk-form-controls-text">
+                                    <label><input class="uk-radio" type="radio" name="radio1"> Male</label><br>
+                                    <label><input class="uk-radio" type="radio" name="radio1"> Female</label>
+                                </div>
+                            </div>
+
+                            <div class="js-upload uk-placeholder uk-text-center">
+                                <span uk-icon="icon: cloud-upload"></span>
+                                <span class="uk-text-middle">Attach your 2024 term 3 report here by dropping them here or</span>
+                                <div uk-form-custom>
+                                    <input type="file" multiple>
+                                    <span class="uk-link">selecting one</span>
+                                </div>
+                            </div>
+                            <progress id="js-progressbar" class="uk-progress" value="0" max="100" hidden></progress>
+
+                            <div class="js-upload uk-placeholder uk-text-center">
+                                <span uk-icon="icon: cloud-upload"></span>
+                                <span class="uk-text-middle">Attach your copy of birth certificate(ID) here by dropping them here or</span>
+                                <div uk-form-custom>
+                                    <input type="file" multiple>
+                                    <span class="uk-link">selecting one</span>
+                                </div>
+                            </div>
+                            <progress id="js-progressbar" class="uk-progress" value="0" max="100" hidden></progress>
+
+                            <div class="js-upload uk-placeholder uk-text-center">
+                                <span uk-icon="icon: cloud-upload"></span>
+                                <span class="uk-text-middle">Attach your proof of residence here by dropping them here or</span>
+                                <div uk-form-custom>
+                                    <input type="file" multiple>
+                                    <span class="uk-link">selecting one</span>
+                                </div>
+                            </div>
+                            <progress id="js-progressbar" class="uk-progress" value="0" max="100" hidden></progress>
+
+                            <h2 class="uk-heading-bullet">Parent/Guardian Information</h2>
+
+                            <div class="uk-width-1-2@s">
+                                <label class="uk-form-label" for="form-stacked-text">First Name</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input" id="form-stacked-text" type="text"
+                                        placeholder="parent first name...">
+                                </div>
+                            </div>
+
+                            <div class="uk-width-1-2@s">
+                                <label class="uk-form-label" for="form-stacked-text">Last Name</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input" id="form-stacked-text" type="text"
+                                        placeholder="parent last name...">
+                                </div>
+                            </div>
+
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="form-stacked-text">Email</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input" id="form-stacked-text" type="text"
+                                        placeholder="parent email...">
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="form-stacked-text">Phone Number</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input" id="form-stacked-text" type="text"
+                                        placeholder="student phone No...">
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="form-stacked-text">ID Number</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input" id="form-stacked-text" type="text"
+                                        placeholder="parent ID No...">
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <div uk-form-custom="target: > * > span:first-child">
+                                    <select aria-label="Custom controls">
+                                        <option value="">relation to student</option>
+                                        <option value="1">Mother</option>
+                                        <option value="2">Father</option>
+                                        <option value="3">brother</option>
+                                        <option value="4">Sister</option>
+                                        <option value="4">Guardian</option>
+                                    </select>
+                                    <button class="uk-button uk-button-default" type="button" tabindex="-1">
+                                        <span></span>
+                                        <span uk-icon="icon: chevron-down"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="js-upload uk-placeholder uk-text-center">
+                                <span uk-icon="icon: cloud-upload"></span>
+                                <span class="uk-text-middle">Attach ID Copy of your Parent/Guardian here by dropping them here or</span>
+                                <div uk-form-custom>
+                                    <input type="file" multiple>
+                                    <span class="uk-link">selecting one</span>
+                                </div>
+                            </div>
+
+                            <progress id="js-progressbar" class="uk-progress" value="0" max="100" hidden></progress>
+
+                            <h2 class="uk-heading-bullet">School Information</h2>
+
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="form-stacked-text">School Name</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input" id="form-stacked-text" type="text"
+                                        placeholder="school name...">
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="form-stacked-text">Grade</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input" id="form-stacked-text" type="text"
+                                        placeholder="grade...">
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="form-stacked-text">Telephone Number</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input" id="form-stacked-text" type="text"
+                                        placeholder="Telephone No....">
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="form-stacked-text">Yard Number</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input" id="form-stacked-text" type="text"
+                                        placeholder="yard number...">
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="form-stacked-text">Section</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input" id="form-stacked-text" type="text"
+                                        placeholder="section...">
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="form-stacked-text">Zip-Code</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input" id="form-stacked-text" type="text"
+                                        placeholder="zip-code...">
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="form-stacked-text">Zip-Code</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input" id="form-stacked-text" type="text"
+                                        placeholder="zip-code...">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit-icons.min.js"></script>
+<!-- uploading documents script  -->
+<script>
+
+    var bar = document.getElementById('js-progressbar');
+
+    UIkit.upload('.js-upload', {
+
+        url: '',
+        multiple: true,
+
+        beforeSend: function () {
+            console.log('beforeSend', arguments);
+        },
+        beforeAll: function () {
+            console.log('beforeAll', arguments);
+        },
+        load: function () {
+            console.log('load', arguments);
+        },
+        error: function () {
+            console.log('error', arguments);
+        },
+        complete: function () {
+            console.log('complete', arguments);
+        },
+
+        loadStart: function (e) {
+            console.log('loadStart', arguments);
+
+            bar.removeAttribute('hidden');
+            bar.max = e.total;
+            bar.value = e.loaded;
+        },
+
+        progress: function (e) {
+            console.log('progress', arguments);
+
+            bar.max = e.total;
+            bar.value = e.loaded;
+        },
+
+        loadEnd: function (e) {
+            console.log('loadEnd', arguments);
+
+            bar.max = e.total;
+            bar.value = e.loaded;
+        },
+
+        completeAll: function () {
+            console.log('completeAll', arguments);
+
+            setTimeout(function () {
+                bar.setAttribute('hidden', 'hidden');
+            }, 1000);
+
+            alert('Upload Completed');
+        }
+
+    });
+
+</script>

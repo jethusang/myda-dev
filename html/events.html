@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Motlalerain Youth Development Academy</title>
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/css/uikit.min.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 991px) {
+            .uk-navbar-center {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+            }
+
+            .uk-navbar-right {
+                display: none;
+                /* Hide default right side items on small screens */
+            }
+
+            .logo {
+                width: 150px;
+                /* Adjust logo width for smaller screens */
+            }
+
+
+            /* Remove top margin from navigation links on small screens */
+            nav uk-dropnav ul li {
+                margin-top: 0;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .uk-navbar-toggle {
+                display: none;
+                margin-left: 50px;
+            }
+
+            .uk-slideshow-items {
+                height: 100px;
+            }
+        }
+
+
+        /* Reset styles for active class (optional) */
+        .uk-active {
+            background-color: transparent !important;
+            /* remove default background color */
+            color: inherit !important;
+            /* inherit text color */
+        }
+
+        .logo {
+            width: 200px;
+        }
+
+        .uk-slideshow-items {
+            height: 550px;
+        }
+
+        .main-color {
+            color: rgb(0, 195, 255);
+        }
+
+        .sec-main {
+            color: rgb(0, 195, 255);
+        }
+
+        .secondary-color {
+            color: #f7f7f7;
+        }
+
+        .main-bak-color {
+            background-color: rgb(0, 195, 255);
+        }
+
+
+        .glass-background {
+            background: rgba(239, 239, 62, 0.216);
+            border-radius: 16px;
+            /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+            backdrop-filter: blur(2px);
+            padding: 20px;
+        }
+        .main-backg-color{
+            background-color: rgb(0, 195, 255);
+        }
+    </style>
+
+</head>
+<header>
+    <nav class="uk-navbar-container uk-text-large uk-text-bold">
+        <div class="uk-container">
+            <div uk-navbar>
+
+                <div class="uk-navbar-center">
+                    <a class="uk-navbar-item uk-logo" href="#"><img class="logo" src="/assets/MotlaleRain_logo.jpg"
+                            alt="Potters'house logo"></a>
+
+                    <!-- humberger to only appear in the phones  -->
+
+                    <a class="uk-navbar-toggle uk-navbar-toggle-animate" uk-navbar-toggle-icon href="#"></a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active"><a href="/index.html">Home</a></li>
+                            <li><a href="/index.html#about">About</a></li>
+                            <li><a href="/html/programs.html">Programs</a></li>
+                            <li><a href="/html/events.html">Events</a></li>
+                            <li><a href="/index.html#contact-us">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <nav uk-dropnav="mode: click">
+                        <ul class="uk-subnav uk-navbar-right">
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/index.html#about">About</a></li>
+                            <li>
+                                <a href="#">Programs<span uk-drop-parent-icon></span></a>
+                                <div class="uk-dropdown">
+                                    <ul class="uk-nav uk-dropdown-nav">
+                                        <li><a href="/html/programs.html#program1">Personalized tutoring</a></li>
+                                        <li><a href="/html/programs.html#program2">Homework & Assignment Assistance</a></li>
+                                        <li><a href="/html/programs.html#program3">Exam Preparation</a></li>
+                                        <li><a href="/html/programs.html#program4">Learning Strategies & Study Skills</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="/html/events.html">Events</a></li>
+
+                            <li><a href="/index.html#contact-us">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body>
+
+
+
+    <div class="uk-container uk-container-large uk-margin-medium-top " >
+
+
+        <div class="uk-flex uk-flex-center@m">
+            <ul class="uk-breadcrumb">
+                <li><a href="">Home</a></li>
+                <li><span>Events</span></li>
+            </ul>
+        </div>
+
+        <div class="uk-flex uk-flex-center@m">
+            <div>
+                <div class="uk-width-2xlarge uk-margin">
+                  <h2 class="uk-heading-bullet">Motlalerain Youth Development Accademy Events</h2>
+                       
+                  <div>
+                    <ul class="uk-child-width-expand" uk-tab>
+                        <li class="uk-active"><a href="#">Upcomming Events</a></li>
+                        <li><a href="#">Current Events</a></li>
+                        <li><a href="#">Past Events</a></li>
+                        
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit-icons.min.js"></script>
+

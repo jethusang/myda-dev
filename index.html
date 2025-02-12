@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Motlalerain Youth Development Academy</title>
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/css/uikit.min.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 991px) {
+            .uk-navbar-center {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+            }
+
+            .uk-navbar-right {
+                display: none;
+                /* Hide default right side items on small screens */
+            }
+
+            .logo {
+                width: 150px;
+                /* Adjust logo width for smaller screens */
+            }
+
+
+            /* Remove top margin from navigation links on small screens */
+            nav uk-dropnav ul li {
+                margin-top: 0;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .uk-navbar-toggle {
+                display: none;
+                margin-left: 50px;
+            }
+
+            .uk-slideshow-items {
+                height: 100px;
+            }
+        }
+
+
+        /* Reset styles for active class (optional) */
+        .uk-active {
+            background-color: transparent !important;
+            /* remove default background color */
+            color: inherit !important;
+            /* inherit text color */
+        }
+
+        .logo {
+            width: 200px;
+        }
+
+        .uk-slideshow-items {
+            height: 630px;
+        }
+
+        .main-color {
+            color: rgb(0, 195, 255);
+        }
+
+        .sec-main {
+            color: rgb(0, 195, 255);
+        }
+
+        .secondary-color {
+            color: #f7f7f7;
+        }
+
+        .main-bak-color {
+            background-color: rgb(0, 195, 255);
+        }
+
+
+        .glass-background {
+            background: rgba(239, 239, 62, 0.216);
+            border-radius: 16px;
+            /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+            backdrop-filter: blur(2px);
+            padding: 20px;
+        }
+
+        .slide-control {
+            background-color: #0e76b7;
+            border-radius: 20px;
+
+        }
+
+        .footer-color {
+            background-color: #ffff00;
+        }
+
+        .footer, a {
+            padding: 10px;
+            color: black;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: #ffff00;
+        }
+
+    </style>
+
+</head>
+<header>
+    <nav class="uk-navbar-container uk-text-large uk-text-bold">
+        <div class="uk-container">
+            <div uk-navbar>
+
+                <div class="uk-navbar-center">
+                    <a class="uk-navbar-item uk-logo" href="#"><img class="logo" src="/assets/MotlaleRain_logo.jpg"
+                            alt="Potters'house logo"></a>
+
+                    <!-- humberger to only appear in the phones  -->
+
+                    <a class="uk-navbar-toggle uk-navbar-toggle-animate" uk-navbar-toggle-icon href="#"></a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active"><a href="#">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="/html/programs.html">Programs</a></li>
+                            <li><a href="/html/events.html">Events</a></li>
+                            <li><a href="#contact-us">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <nav uk-dropnav="mode: click">
+                        <ul class="uk-subnav uk-navbar-right">
+                            <li><a href="">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li>
+                                <a href="#">Programs<span uk-drop-parent-icon></span></a>
+                                <div class="uk-dropdown">
+                                    <ul class="uk-nav uk-dropdown-nav">
+                                        <li><a href="/html/programs.html#program1">Personalized tutoring</a></li>
+                                        <li><a href="/html/programs.html#program2">Homework & Assignment Assistance</a>
+                                        </li>
+                                        <li><a href="/html/programs.html#program3">Exam Preparation</a></li>
+                                        <li><a href="/html/programs.html#program4">Learning Strategies & Study
+                                                Skills</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="/html/events.html">Events</a></li>
+
+                            <li><a href="#contact-us">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body>
+
+
+    <div class="uk-container uk-container-large">
+        <div class="uk-position-relative uk-light" uk-slideshow="animation: scale;autoplay: true">
+
+            <div class="uk-slideshow-items ">
+                <div>
+                    <a href="/html/registration.html"><img
+                            src="assets/motlalerain-youth-development-academy-carousel1.png" alt="" uk-cover></a>
+                   
+
+                </div>
+                <div>
+                    <a href="/html/registration.html"><img
+                            src="assets/motlalerain-youth-development-academy-carousel2.png" alt="" uk-cover></a>
+                    
+                </div>
+                <div>
+                    <a href="/html/registration.html"> <img src="assets/motlalerain-carousel1.jpg" alt="" uk-cover></a>
+                
+                </div>
+
+
+            </div>
+
+            <div class="uk-position-bottom-center uk-position-small">
+                <ul class="uk-dotnav">
+                    <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
+                    <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
+                    <li uk-slideshow-item="2"><a href="#">Item 3</a></li>
+                </ul>
+            </div>
+
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover slide-control" href uk-slidenav-next
+                uk-slideshow-item="next"></a>
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover slide-control" href uk-slidenav-previous
+                uk-slideshow-item="previous"></a>
+        </div>
+
+        <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match uk-margin-medium-top" uk-grid>
+            <div>
+                <div class="uk-card main-bak-color uk-card-body">
+                    <h3 class="uk-card-title">Work with Heart</h3>
+                    <p>Motlalerain Youth Development Academy believes in working with heart and dedication to empower
+                        young minds.</p>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card main-bak-color uk-card-body">
+                    <h3 class="uk-card-title">Reliable Services</h3>
+                    <p>
+                        We provide reliable services to ensure that our young people receive the support they need to
+                        succeed.</p>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card main-bak-color uk-card-body">
+                    <h3 class="uk-card-title">Great Support</h3>
+                    <p>Our dedicated team offers great support to all our students, ensuring they have the resources and
+                        encouragement to thrive.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="uk-panel uk-margin-xlarge-top uk-container-small uk-align-center">
+            <h2 class="uk-heading-line uk-text-center main-color" id="about"><span>About</span></h2>
+            <img class="uk-align-left uk-margin-remove-adjacent" src="assets/MotlaleRain_logo.jpg" width="225"
+                height="150" alt="Example image">
+
+    
+            <p> Motlalerain Tutoring & Youth Development is committed to empowering young people through personalized
+                academic support and community-focused initiatives. Our mission is simple: to help students excel
+                academically, build self-confidence, and develop critical life skills that will serve them far beyond
+                the
+                classroom.</p>
+
+            <p> We understand that every learner is unique, which is why we offer tailored tutoring services in subjects
+                like math, science, languages, and more, designed to address the individual needs of each student. From
+                foundational learning for younger students to exam preparation for high schoolers, Motlalerain provides
+                a
+                nurturing environment where young people can flourish.</p>
+
+            <p> In addition to academic support, we believe in the power of community and creativity. Our events, such
+                as
+                the Kasi Dance & Rap Festive and Educational Fun Days, provide students with opportunities to showcase
+                their
+                talents, connect with peers, and build the confidence to thrive in all aspects of life.</p>
+
+            <p> At Motlalerain, we don't just teach subjects—we inspire a passion for learning, foster a love for
+                discovery,
+                and equip students with the tools they need to succeed both academically and personally.
+                <br><br>
+
+                Empowering Minds. Inspiring Futures.
+            </p>
+
+
+        </div>
+
+        <div class="uk-panel uk-container-small uk-align-center">
+            <h2 class="uk-heading-bullet main-color">Itumeleng Beng</h2>
+            <img class="uk-align-center uk-align-right@m uk-margin-remove-adjacent"
+                src="assets/Itumeleng-Beng-myda-founder.jpg" width="350" height="150" alt="Example image">
+            <p>Our esteemed Chairperson leads our academy with vision and direction, ensuring that our goals are met and
+                our mission is fulfilled.</p>
+            <p class="uk-margin">
+                <a href="#" class="uk-button uk-button-primary">Read More</a>
+            </p>
+        </div>
+
+        <div class="uk-section uk-section-muted">
+            <div class="uk-container" id="sermons">
+
+                <h2 class="uk-heading-line main-color"><span>Tutorial Services</span></h2>
+
+                <div class="uk-grid-match uk-child-width-1-4@m" uk-grid
+                    uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card; delay: 300; repeat: true">
+                    <div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="assets/motlalerain-youth-development-academy-service1.png" width="1800"
+                                    height="1200" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title ">Personalized Tutoring</h3>
+                    
+                                <button class="uk-button uk-button-primary uk-button-small">Read more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="assets/motlalerain-youth-development-academy-service2.png" width="1800"
+                                    height="1200" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Homework & Assignment Assistance</h3>
+                      
+                                <button class="uk-button uk-button-primary uk-button-small">Read more</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="assets/motlalerain-youth-development-academy-service3.png" width="1800"
+                                    height="1200" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Exam Preparation</h3>
+                           
+                                <button class="uk-button uk-button-primary uk-button-small">Read more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="assets/motlalerain-youth-development-academy-service4.png" width="1800"
+                                    height="1200" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Learning Strategies & Study Skills</h3>
+                    
+                                <button class="uk-button uk-button-primary uk-button-small">Read more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="uk-section">
+        <div class="uk-container">
+            <div class="uk-child-width-expand@s" uk-grid>
+                <div class="uk-grid-item-match">
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h4> <a href="" class="uk-icon-button" uk-icon="info"></a>submit your query here</h4>
+                        <p>altenatively check frequently FAQs section <a href="/html/fqs.html" class="uk-icon-button"
+                                uk-icon="link"></a></p>
+                        <form class="uk-grid-small" uk-grid>
+
+                            <div class="uk-width-1-2@s">
+                                <input class="uk-input" type="text" placeholder="First Name*" aria-label="50">
+                            </div>
+                            <div class="uk-width-1-2@s">
+                                <input class="uk-input" type="text" placeholder="Last Name*" aria-label="50">
+                            </div>
+
+                            <div class="uk-width-1-2@s">
+                                <input class="uk-input" type="text" placeholder="email(optional)" aria-label="50">
+                            </div>
+                            <div class="uk-width-1-2@s">
+                                <input class="uk-input" type="text" placeholder="Phone number *" aria-label="50">
+                            </div>
+                            <div class="uk-width-1-1">
+                                <input class="uk-input" type="text" placeholder="Address * " aria-label="100">
+                            </div>
+
+                            <div class="uk-width-2xlarge uk-margin">
+                                <textarea class="uk-textarea" rows="5" placeholder="How can we help you ? (optional)"
+                                    aria-label="Textarea"></textarea>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <div>
+                    <h3 id="contact-us">Contact Us</h3>
+                    <p> Are you having any enquiry regarding our tutorial service, feel free to communicate with us in
+                        the following platforms</p>
+                    <li><a href="https://www.facebook.com/profile.php?id=100083595870996" class="uk-icon-button"
+                            uk-icon="facebook"></a>
+                        Motlalerain Youth Development Academy NPO</li>
+
+                    <li><a href="https://wa.me/+738027709text=Congratulations You're a Genius" class="uk-icon-button"
+                            uk-icon="whatsapp"></a> 073 802 7709
+                    </li>
+
+                    <li>
+                        <a href="" class="uk-icon-button" uk-icon="receiver"></a> 073 802 7709
+                    </li>
+
+                    <li><a href="#" class="uk-icon-button" uk-icon="tiktok"></a>
+                        Motlalerain Youth Development Academy NPO
+                    </li>
+
+
+                    <li><a href="#" class="uk-icon-button" uk-icon="mail"></a>
+                        Motlalerain.yda@yahoo.com
+                    </li>
+
+                    <li><a href="#" class="uk-icon-button" uk-icon="location"></a>
+                        0009 Morolong Section , Madibogo, South Africa
+                    </li>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="uk-child-width-expand@s uk-section main-bak-color uk-text-center uk-height-small" uk-grid>
+
+
+            <div class="uk-width-1-2">
+                <div class=" uk-margin-medium-top">
+                    <a href="" class="uk-icon-button uk-margin-small-right footer-color" uk-icon="whatsapp"></a>
+                    <a href="" class="uk-icon-button  uk-margin-small-right footer-color" uk-icon="facebook"></a>
+                    <a href="" class="uk-icon-button footer-color" uk-icon="receiver"></a>
+                    <p>&copy; 2025 Motlalerain youth development Academy. All rights reserved.</p>
+                </div>
+            </div>
+            <div class="uk-width-1-2">
+                <div class="footer uk-margin-medium-top">
+                    <a href="#" class="">Home</a>
+                    <a href="#about" class="">About</a>
+                    <a href="/html/programs.html" class="">Programs</a>
+                    <a href="/html/events.html" class="">Events</a>
+                    <a href="#contact-us" class="">Contact</a>
+                </div>
+
+                <p>Developed by J. Ethusang <a href=""><span class="uk-icon uk-icon-image"
+                            style="background-image: url(assets/jethusang-web-developer.png);  height:40px; width:100px;"></span>
+                    </a>
+                </p>
+
+
+            </div>
+
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit-icons.min.js"></script>
