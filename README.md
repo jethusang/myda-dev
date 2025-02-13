@@ -62,9 +62,9 @@ Alternatively, you can submit a query through our online contact form or check o
 
 ## Deployment Information
 
-This website was developed by **J. Ethusang** and is hosted on [Netlify](https://app.netlify.com/sites/myda-dev/deploys).
+This website was developed by **J. Ethusang** and is hosted on  
 
-![Netlify Status](https://api.netlify.com/api/v1/badges/14631bb5-1ec1-42cc-abb0-3722257465f7/deploy-status)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/14631bb5-1ec1-42cc-abb0-3722257465f7/deploy-status)](https://app.netlify.com/sites/myda-dev/deploys)
 
 You can track the current status of the website or explore previous deployments at [Motlalerain Youth Development Academy Netlify](https://app.netlify.com/sites/myda-dev/deploys).
 
